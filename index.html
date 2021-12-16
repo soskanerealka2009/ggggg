@@ -63,7 +63,7 @@ function getPrices() {
     });
   
     var prodPrice = document.getElementById("prodPrice"); 
-    prodPrice.innerHTML = price + " рублей";
+    prodPrice.innerHTML = price + " СЂСѓР±Р»РµР№";
   }
   
   window.addEventListener('DOMContentLoaded', function (event) {
@@ -108,27 +108,28 @@ function getPrices() {
 </script>
 
 <div class="container mb-3 text-center" id="hard_calc">
+     <meta charset = "utf-8">
         <label>
-            Кол-во товаров:
+            РљРѕР»-РІРѕ С‚РѕРІР°СЂРѕРІ:
             <br/>
-            <input id="quantity" type="text" name="quantity-name" placeholder="Введите значение">
+            <input id="quantity" type="text" name="quantity-name" placeholder="Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ">
         </label>
         <br />
-        <div id="prodPrice">Выберите тип товара</div>
-            Тип товара:
+        <div id="prodPrice">Р’С‹Р±РµСЂРёС‚Рµ С‚РёРї С‚РѕРІР°СЂР°</div>
+            РўРёРї С‚РѕРІР°СЂР°:
             <form id="new_form">
             <select name="prodType" >
-                <option value="1">Малый</option>
-                <option value="2">Средний</option>
-                <option value="3">Большой</option>
+                <option value="1">РњР°Р»С‹Р№</option>
+                <option value="2">РЎСЂРµРґРЅРёР№</option>
+                <option value="3">Р‘РѕР»СЊС€РѕР№</option>
             </select>
             <div id="radios">
-                <label><input type="radio" name="prodOptions" value="option1">Крепкий</label>
-                <label><input type="radio" name="prodOptions" value="option2">Хрупкий</label>
+                <label><input type="radio" name="prodOptions" value="option1">РљСЂРµРїРєРёР№</label>
+                <label><input type="radio" name="prodOptions" value="option2">РҐСЂСѓРїРєРёР№</label>
             </div>
             <div id="checkboxes">
-                <label><input type="checkbox" name="prop1">Высокий</label>
-                <label><input type="checkbox" name="prop2">Широкий</label>
+                <label><input type="checkbox" name="prop1">Р’С‹СЃРѕРєРёР№</label>
+                <label><input type="checkbox" name="prop2">РЁРёСЂРѕРєРёР№</label>
             </div>
         </form>
     </div>
